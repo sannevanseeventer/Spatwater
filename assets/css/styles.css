@@ -618,7 +618,6 @@ input {
   color: var(--green);
   border-bottom: 2px solid var(--green);
   cursor: pointer;
-
 }
 
 /* WATERKWALITEIT */
@@ -1322,7 +1321,7 @@ input {
 
 
   .team2__mees {
-    background-image: url(/assets/img/Mees1_fullscreen.png);
+    background-image: url(../assets/img/Mees1_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1332,7 +1331,7 @@ input {
   }
 
   .team2__timo {
-    background-image: url(/assets/img/Timo1_fullscreen.png);
+    background-image: url(../assets/img/Timo1_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1341,7 +1340,7 @@ input {
   }
 
   .team2__jesse {
-    background-image: url(/assets/img/Jesse1_fullscreen.png);
+    background-image: url(../assets/img/Jesse1_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1368,7 +1367,7 @@ input {
 
 
   .team2__mees:hover {
-    background-image: url(/assets/img/Mees2_fullscreen.png);
+    background-image: url(../assets/img/Mees2_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1379,7 +1378,7 @@ input {
 
 
   .team2__timo:hover {
-    background-image: url(/assets/img/Timo2_fullscreen.png);
+    background-image: url(../assets/img/Timo2_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1389,7 +1388,7 @@ input {
   }
 
   .team2__jesse:hover {
-    background-image: url(/assets/img/Jesse2_fullscreen.png);
+    background-image: url(../assets/img/Jesse2_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
