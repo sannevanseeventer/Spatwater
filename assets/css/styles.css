@@ -1321,7 +1321,7 @@ input {
 
 
   .team2__mees {
-    background-image: url('../img/Mees1_fullscreen.png');
+    background-image: url("../img/Mees1_fullscreen.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
