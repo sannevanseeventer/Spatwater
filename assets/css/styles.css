@@ -598,6 +598,7 @@ input {
   margin-top: 2em;
 }
 
+
 .quote {
   margin-top: 1em;
   color: var(--spat);
@@ -821,7 +822,7 @@ input {
 
 /*=============== VIDEO ===============*/
 .video__container {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .video__description {
@@ -1083,17 +1084,17 @@ input {
   }
 
   .about__data {
-    max-width: 30rem;
+    max-width: 35rem;
     margin: 0 auto;
   }
 
   .klimaat__data {
-    max-width: 30rem;
+    max-width: 35rem;
     margin: 0 auto;
   }
 
   .waterkwaliteit__data {
-    max-width: 30rem;
+    max-width: 35rem;
     margin: 0 auto;
   }
 
@@ -1312,7 +1313,6 @@ input {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    gap: 1rem;
     padding-top: 5em;
     padding-bottom: 3em;
     margin: 0 auto;
@@ -1321,31 +1321,34 @@ input {
 
 
   .team2__mees {
-    background-image: url(./assets/img/Mees1_fullscreen.png);
+    background-image: url(/assets/img/Mees1_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
     width: 200px;
     height: 250px;
+    margin: 0 auto;
 
   }
 
   .team2__timo {
-    background-image: url(./assets/img/Timo1_fullscreen.png);
+    background-image: url(/assets/img/Timo1_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
     width: 200px;
     height: 250px;
+    margin: 0 auto;
   }
 
   .team2__jesse {
-    background-image: url(./assets/img/Jesse1_fullscreen.png);
+    background-image: url(/assets/img/Jesse1_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
     width: 200px;
     height: 250px;
+    margin: 0 auto;
   }
 
   .name {
@@ -1367,34 +1370,37 @@ input {
 
 
   .team2__mees:hover {
-    background-image: url(./assets/img/Mees2_fullscreen.png);
+    background-image: url(/assets/img/Mees2_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
     cursor: pointer;
     width: 200px;
     height: 250px;
+    margin: 0 auto;
   }
 
 
   .team2__timo:hover {
-    background-image: url(./assets/img/Timo2_fullscreen.png);
+    background-image: url(/assets/img/Timo2_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
     cursor: pointer;
     width: 200px;
     height: 250px;
+    margin: 0 auto;
   }
 
   .team2__jesse:hover {
-    background-image: url(./assets/img/Jesse2_fullscreen.png);
+    background-image: url(/assets/img/Jesse2_fullscreen.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
     cursor: pointer;
     width: 200px;
     height: 250px;
+    margin: 0 auto;
   }
 
   .experience__overlay:nth-child(1) {
