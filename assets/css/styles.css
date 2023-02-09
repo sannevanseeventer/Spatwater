@@ -1322,7 +1322,7 @@ input {
 
   .team2__mees {
     display: block;
-    background-image: url("/assets/img/Mees1_fullscreen.png");
+    background-image: url("assets/img/Mees1_fullscreen.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1334,7 +1334,7 @@ input {
 
   .team2__timo {
     display: block;
-    background-image: url("/assets/img/Timo1_fullscreen.png");
+    background-image: url("assets/img/Timo1_fullscreen.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1345,7 +1345,7 @@ input {
 
   .team2__jesse {
     display: block;
-    background-image: url("/assets/img/Jesse1_fullscreen.png");
+    background-image: url("assets/img/Jesse1_fullscreen.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1374,7 +1374,7 @@ input {
 
   .team2__mees:hover {
     display: block;
-    background-image: url("/assets/img/Mees2_fullscreen.png");
+    background-image: url("assets/img/Mees2_fullscreen.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1387,7 +1387,7 @@ input {
 
   .team2__timo:hover {
     display: block;
-    background-image: url("/assets/img/Timo2_fullscreen.png");
+    background-image: url("assets/img/Timo2_fullscreen.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1399,7 +1399,7 @@ input {
 
   .team2__jesse:hover {
     display: block;
-    background-image: url("/assets/img/Jesse2_fullscreen.png");
+    background-image: url("assets/img/Jesse2_fullscreen.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
