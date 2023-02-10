@@ -1,42 +1,99 @@
-/*==================== SHOW MENU ====================*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+const navLogo = document.querySelector('#navbar__logo');
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
-}
+// Display Mobile Menu
+const mobileMenu = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+};
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-    })
-}
+menu.addEventListener('click', mobileMenu);
 
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+// Show active menu when scrolling
+const highlightMenu = () => {
+  const elem = document.querySelector('.highlight');
+  const homeMenu = document.querySelector('#home-page');
+  const aboutMenu = document.querySelector('#about-page');
+  const expertiseMenu = document.querySelector('#expertise-page');
+  let scrollPos = window.scrollY;
+  // console.log(scrollPos);
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+  // adds 'highlight' class to my menu items
+  if (window.innerWidth > 960 && scrollPos < 600) {
+    homeMenu.classList.add('highlight');
+    aboutMenu.classList.remove('highlight');
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    aboutMenu.classList.add('highlight');
+    homeMenu.classList.remove('highlight');
+    expertiseMenu.classList.remove('highlight');
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 2345) {
+    expertiseMenu.classList.add('highlight');
+    aboutMenu.classList.remove('highlight');
+    return;
+  }
+
+  if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
+    elem.classList.remove('highlight');
+  }
+};
+
+window.addEventListener('scroll', highlightMenu);
+window.addEventListener('click', highlightMenu);
+
+//  Close mobile Menu when clicking on a menu item
+const hideMobileMenu = () => {
+  const menuBars = document.querySelector('.is-active');
+  if (window.innerWidth <= 768 && menuBars) {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.remove('active');
+  }
+};
+
+menuLinks.addEventListener('click', hideMobileMenu);
 
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-function scrollHeader(){
-    const header = document.getElementById('header')
-    // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
+// /*==================== SHOW MENU ====================*/
+// const navMenu = document.getElementById('nav-menu'),
+//       navToggle = document.getElementById('nav-toggle'),
+//       navClose = document.getElementById('nav-close')
+
+// /*===== MENU SHOW =====*/
+// /* Validate if constant exists */
+// if(navToggle){
+//     navToggle.addEventListener('click', () =>{
+//         navMenu.classList.add('show-menu')
+//     })
+// }
+
+// /*===== MENU HIDDEN =====*/
+// /* Validate if constant exists */
+// if(navClose){
+//     navClose.addEventListener('click', () =>{
+//         navMenu.classList.remove('show-menu')
+//     })
+// }
+
+// /*==================== REMOVE MENU MOBILE ====================*/
+// const navLink = document.querySelectorAll('.nav__link')
+
+// function linkAction(){
+//     const navMenu = document.getElementById('nav-menu')
+//     // When we click on each nav__link, we remove the show-menu class
+//     navMenu.classList.remove('show-menu')
+// }
+// navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// /*==================== CHANGE BACKGROUND HEADER ====================*/
+// function scrollHeader(){
+//     const header = document.getElementById('header')
+//     // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+//     if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+// }
+// window.addEventListener('scroll', scrollHeader)
 
 
 /*==================== SWIPER DISCOVER ====================*/
