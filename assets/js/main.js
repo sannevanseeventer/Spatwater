@@ -267,3 +267,27 @@ window.addEventListener ('scroll', () => {
     layer3.style.top = value * 0.5 + 'px';
 
 });
+
+
+let text2 = document.getElementById('text2');
+let layer12 = document.getElementById('layer1-2');
+let layer22 = document.getElementById('layer2-2');
+let layer32 = document.getElementById('layer3-2');
+let layer42 = document.getElementById('layer4-2');
+let layer52 = document.getElementById('layer5-2');
+
+
+window.addEventListener ('scroll', () => {
+    let value = window.scrollY;
+
+    text2.style.marginTop = value * 2.5 + 'px';
+    layer22.style.left = value * 0.3 + 'px';
+    layer12.style.left = value * -0.5 + 'px';
+    layer42.style.left = value * 0.3 + 'px';
+    layer52.style.left = value * 0.3 + 'px';
+    layer32.style.left = value * -0.3 + 'px';
+    layer22.style.top = value * 0.5 + 'px';
+    layer12.style.top = value * 1 + 'px';
+    layer32.style.top = value * 0.5 + 'px';
+
+});

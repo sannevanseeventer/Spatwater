@@ -865,6 +865,9 @@ input {
 }
 
 /* PARALLAX TEST */
+.parallax2 {
+  display: none;
+}
 
 .parallax {
   margin-top: -3em;
@@ -877,6 +880,10 @@ input {
 
 #text {
   position: absolute;
+}
+
+#text2 {
+  display: none;
 }
 
 .parallax img {
@@ -1199,46 +1206,6 @@ input {
     margin: 0;
   }
 
-  /* 
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
-
-  .nav__link {
-    color: var(--spat);
-    text-transform: initial;
-    font-size: 0.9em;
-  }
-
-  .nav__dark {
-    position: initial;
-  }
-
-  .nav__menu {
-    display: flex;
-    column-gap: 1rem;
-  }
-
-  .nav__logo {
-    width: 8em;
-    margin-left: 0.5em;
-    padding: 0.5em 0 0.5em 0;
-  }
-
-  .nav__list {
-    flex-direction: row;
-    column-gap: 2rem;
-  }
-
-  .nav__toggle,
-  .nav__close {
-    display: none;
-  }
-
-  .active-link::before {
-    background-color: var(--green);
-  }
-
   .scroll-header .nav__link {
     color: var(--spat);
   }
@@ -1252,10 +1219,10 @@ input {
   }
 
   .scroll-header .change-theme {
-    color: var(--text-color); 
-  }*/
+    color: var(--text-color);
+  }
 
-  .section {
+  */ .section {
     padding: 8rem 0 4rem;
   }
 
@@ -1526,13 +1493,14 @@ input {
   }
 }
 
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1024px;
   }
 }
 
-/* For tall screens on mobiles y desktop*/
+/* For tall screens on mobiles y desktop
 @media screen and (min-height: 721px) {
   body {
     margin: 0;
@@ -1542,4 +1510,40 @@ input {
   .home__img {
     height: 640px;
   }
+} */
+
+@media screen and (min-width: 1250px) {
+  .parallax {
+    display: none;
+  }
+
+  #text {
+    display: none;
+  }
+
+  .parallax img {
+    display: none;
+  }
+
+  .parallax2 {
+    margin-top: -12rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94rem;
+  }
+
+  #text2 {
+    position: absolute;
+  }
+
+  .parallax2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
 }
