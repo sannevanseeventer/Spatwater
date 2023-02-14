@@ -1163,11 +1163,6 @@ input {
     margin: 0 auto;
   }
 
-  .portfolio__container {
-    width: calc(100% - 5em);
-
-  }
-
   .portfolio__nav {
     margin-top: 2em;
     margin-bottom: 3em;
@@ -1292,9 +1287,19 @@ input {
     margin-top: -90px;
   }
 
+
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
   .portfolio__content {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .portfolio__descr {
+    font-size: 1.2em;
   }
 
   .contact_text {
