@@ -174,7 +174,7 @@ input {
 /*=============== NAV ===============*/
 
 .navbar {
-  background: var(--lg-bg);
+  background: white;
   box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
   height: 80px;
   width: 100%;
@@ -301,7 +301,7 @@ input {
     height: 2.5px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: var(--spat);
+    background: var(--darkblue);
   }
 
   .navbar__item {
@@ -354,22 +354,6 @@ input {
 }
 
 /*=============== HOME ===============*/
-.home__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: 83%;
-}
-
-.home__container {
-  position: relative;
-  height: calc(100vh - var(--header-height));
-  align-content: center;
-  row-gap: 3rem;
-}
 
 .home__data-subtitle,
 .home__data-title,
@@ -400,6 +384,33 @@ input {
 .hero__scroll a {
   color: var(--green);
   font-size: 0.8em;
+}
+
+/* PARALLAX */
+.parallax2 {
+  display: none;
+}
+
+.parallax {
+  margin-top: 2em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+}
+
+#text {
+  position: absolute;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 /*=============== BUTTONS ===============*/
@@ -865,36 +876,6 @@ input {
   font-size: 1.2rem;
 }
 
-/* PARALLAX TEST */
-.parallax2 {
-  display: none;
-}
-
-.parallax {
-  margin-top: 2em;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50rem;
-}
-
-#text {
-  position: absolute;
-}
-
-#text2 {
-  display: none;
-}
-
-.parallax img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
-}
-
 /*=============== SPONSORS ===============*/
 .sponsor {
   position: relative;
@@ -1063,8 +1044,20 @@ input {
 
 @media screen and (min-width: 454px) {
   .parallax {
-    margin-top: -7rem;
+    margin-top: -4rem;
     height: 60rem;
+  }
+
+  .home__data-title {
+    margin-top: -13em;
+  }
+
+  .home__data-subtitle {
+    font-size: 1.4em;
+  }
+
+  .hero__scroll a {
+    font-size: 1.2em;
   }
 
   .about__img {
@@ -1078,8 +1071,16 @@ input {
   }
 
   .portfolio__content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .contact_text {
+    font-size: 2em;
+  }
+
+  .br1 {
+    display: none;
   }
 
   .contact__data {
@@ -1090,6 +1091,17 @@ input {
   .home__data {
     padding-left: 1em;
   }
+
+  .scrollup__icon {
+    color: var(--white-color);
+    font-size: 2rem;
+  }
+
+  .footer__terms {
+    justify-content: left;
+  }
+
+
 }
 
 /* For medium devices */
@@ -1099,14 +1111,36 @@ input {
     height: 75rem;
   }
 
+  .home__data-title {
+    font-size: 2.5em;
+    margin-top: -12em;
+  }
+
+  .home__data-subtitle {
+    font-size: 1.7em;
+
+  }
+
+  .hero__scroll a {
+    font-size: 1.4em;
+  }
+
+  .about__description {
+    font-size: 1.3em;
+  }
+
+  .section__title {
+    font-size: 2.5em;
+  }
+
   .about__img {
     display: inline-block;
-    margin-left: 240px;
+    margin-left: 200px;
     margin-top: -90px;
   }
 
   .about__img-one {
-    width: 240px;
+    width: 300px;
   }
 
   .about__data {
@@ -1125,8 +1159,13 @@ input {
   }
 
   .portfolio__content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .portfolio__container {
+    width: calc(100% - 5em);
+
   }
 
   .portfolio__nav {
@@ -1148,24 +1187,108 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 25em 0 25em;
+    padding: 0 2em 0 2em;
     padding-top: 3em;
     padding-bottom: 3em;
   }
 
+  .klimaat__description {
+    font-size: 1.3em;
+  }
+
+  .waterkwaliteit__description {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  ul li {
+    font-size: 1.2em;
+  }
+
+  .sub__title {
+    font-size: 1.5em;
+  }
+
+  .quote {
+    font-size: 1.6em;
+  }
+
+  .client {
+    font-size: 1em;
+  }
+
   .contact_text {
-    font-size: 1.7em;
-    padding-left: 2em;
+    font-size: 2em;
+    padding: 0 1em 0 1em;
   }
 
   .mail__text {
-    padding-left: 3.5em;
+    padding: 0 1.6em 0 1.6em;
+  }
+
+  .portfolio__title {
+    font-size: 2.5em;
+  }
+
+  .portfolio__item {
+    font-size: 1.4em;
+  }
+
+  .portfolio__subtitle {
+    font-size: 1.3em;
+  }
+
+  .portfolio__name {
+    font-size: 1.7em;
+  }
+
+  .footer__copy {
+    text-align: center;
+  }
+
+  .footer__terms {
+    justify-content: center;
+  }
+
+  .button_text2 {
+    font-size: 1.2em;
+  }
+
+  .expertise h3 {
+    font-size: 1.4em;
+  }
+
+  .nav__logo {
+    margin-left: 2em;
   }
 }
 
+
 @media screen and (min-width: 720px) {
+
   .parallax {
     height: 95rem;
+  }
+
+  .home__data {
+    padding-left: 2em;
+  }
+
+  .home__data-title {
+    font-size: 2.9em;
+    margin-top: -14em;
+  }
+
+  .home__data-subtitle {
+    font-size: 1.7em;
+
+  }
+
+  .hero__scroll a {
+    font-size: 1.4em;
   }
 
   .about__img {
@@ -1174,13 +1297,8 @@ input {
     margin-top: -90px;
   }
 
-
-  .portfolio__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .portfolio__content {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -1198,13 +1316,153 @@ input {
     row-gap: 2.5rem;
     column-gap: 1.5em;
     padding: 0 1em 0 1em;
+  }
+
+  .expertise__card {
+    height: 25em;
+    width: 20em;
+  }
+
+  .expertise h3 {
+    font-size: 1.8em;
+  }
+
+  .discover {
+    display: none;
+  }
+
+
+  .team2 {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.4em 4em 0.4em;
+  }
+
+  .team2__title {
+    font-size: 2rem;
+    color: var(--spat);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  .team2__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .team2__mees {
+    background-image: url("../img/Mees1_fullscreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 210px;
+    height: 260px;
 
   }
+
+  .team2__timo {
+    background-image: url("../img/Timo1_fullscreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 210px;
+    height: 260px;
+  }
+
+  .team2__jesse {
+    background-image: url("../img/Jesse1_fullscreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 210px;
+    height: 260px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+  }
+
+  .mail {
+    font-size: 0.8rem;
+    display: block;
+    color: white;
+  }
+
+  .personal__information {
+    margin: 13em 0em 0.3em 1em;
+  }
+
+  .team2__mees:hover {
+    background-image: url("../img/Mees2_fullscreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 210px;
+    height: 260px;
+  }
+
+
+  .team2__timo:hover {
+    background-image: url("../img/Timo2_fullscreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 210px;
+    height: 260px;
+  }
+
+  .team2__jesse:hover {
+    background-image: url("../img/Jesse2_fullscreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 210px;
+    height: 260px;
+  }
+
+  .contact_text {
+    font-size: 2.4em;
+    padding: 0 2em 0 2em;
+  }
+
+  .mail__text {
+    padding-left: 3.8em;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+  }
+
+
+  .home__data-title {
+    font-size: 3em;
+    margin-top: -12em;
+  }
+
+  .home__data-subtitle {
+    font-size: 1.7em;
+
+  }
+
+  .hero__scroll a {
+    font-size: 1.4em;
   }
 
   .scroll-header .nav__link {
@@ -1223,17 +1481,13 @@ input {
     color: var(--text-color);
   }
 
-  */ .section {
+  .section {
     padding: 8rem 0 4rem;
   }
 
   .home__container {
     height: 100vh;
     grid-template-rows: 1.8fr .5fr;
-  }
-
-  .home__data {
-    align-self: flex-end;
   }
 
   .home__info {
@@ -1247,7 +1501,7 @@ input {
 
   .about__img {
     display: inline-block;
-    margin-left: 480px;
+    margin-left: 350px;
     margin-top: -90px;
   }
 
@@ -1271,120 +1525,6 @@ input {
     margin-bottom: var(--mb-2);
   }
 
-  .discover {
-    display: none;
-  }
-
-
-  .team2 {
-    position: relative;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 2em 2em;
-  }
-
-  .team2__title {
-    font-size: 2rem;
-    color: var(--spat);
-    font-weight: 600;
-    text-align: center;
-    padding-top: 2em;
-  }
-
-  .team2__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    padding-top: 5em;
-    padding-bottom: 3em;
-    margin: 0 auto;
-    width: 80%;
-  }
-
-
-  .team2__mees {
-    background-image: url("../img/Mees1_fullscreen.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    width: 280px;
-    height: 350px;
-    margin: 0 auto;
-
-  }
-
-  .team2__timo {
-    background-image: url("../img/Timo1_fullscreen.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    width: 280px;
-    height: 350px;
-    margin: 0 auto;
-  }
-
-  .team2__jesse {
-    background-image: url("../img/Jesse1_fullscreen.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    width: 280px;
-    height: 350px;
-    margin: 0 auto;
-  }
-
-  .name {
-    font-size: 1.5rem;
-    display: block;
-    color: white;
-  }
-
-  .mail {
-    font-size: 0.9rem;
-    display: block;
-    color: white;
-  }
-
-  .personal__information {
-    margin: 18em 0em 0.3em 1em;
-  }
-
-
-
-  .team2__mees:hover {
-    background-image: url("../img/Mees2_fullscreen.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 280px;
-    height: 350px;
-    margin: 0 auto;
-  }
-
-
-  .team2__timo:hover {
-    background-image: url("../img/Timo2_fullscreen.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 280px;
-    height: 350px;
-    margin: 0 auto;
-  }
-
-  .team2__jesse:hover {
-    background-image: url("../img/Jesse2_fullscreen.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 280px;
-    height: 350px;
-    margin: 0 auto;
-  }
 
   .experience__overlay:nth-child(1) {
     width: 363px;
@@ -1395,23 +1535,95 @@ input {
     width: 160px;
   }
 
-  .subscribe__bg {
-    background: none;
-    padding: 0;
-  }
-
-  .subscribe__container {
-    background-color: var(--first-color-second);
-    padding: 3.5rem 0;
-  }
-
-  .subscribe__input {
-    padding: 0 .5rem;
-  }
-
   .footer__rights {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .sponsor__img {
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+
+  .team2__mees {
+    width: 240px;
+    height: 290px;
+
+  }
+
+  .team2__timo {
+    width: 240px;
+    height: 290px;
+  }
+
+  .team2__jesse {
+    width: 240px;
+    height: 290px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+  }
+
+  .mail {
+    font-size: 0.8rem;
+    display: block;
+    color: white;
+  }
+
+  .personal__information {
+    margin: 15em 0em 0.3em 1em;
+  }
+
+  .team2__mees:hover {
+    width: 240px;
+    height: 290px;
+  }
+
+
+  .team2__timo:hover {
+    width: 240px;
+    height: 290px;
+  }
+
+  .team2__jesse:hover {
+    width: 240px;
+    height: 290px;
+  }
+
+  .home__data-title {
+    font-size: 3.5em;
+    margin-top: -10.5em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  .navbar__container {
+    padding: 0 1.5em;
+  }
+
+  .navbar__links {
+    font-size: 0.9em;
+    padding: 0.7em;
+  }
+
+  .home__data {
+    padding: 0 5em 0 5em;
+  }
+
+  .expertise__wrapper {
+    padding-bottom: 5em;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  .parallax {
+    height: 100rem;
   }
 }
 
@@ -1527,23 +1739,51 @@ input {
   }
 
   .parallax2 {
-    margin-top: -12rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 94rem;
+    height: 75rem;
   }
 
   #text2 {
     position: absolute;
+    margin-left: -30em;
   }
+
+
+  .home__data-subtitle2 {
+    color: var(--spat);
+    font-size: 1.5em;
+    display: block;
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-75);
+  }
+
+  .home__data2 {
+    margin-left: 1em;
+  }
+
+  .home__data-title2 {
+    color: var(--darkblue);
+    font-size: 2.5rem;
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+    margin-top: -11em;
+  }
+
+  .hero__scroll2 a {
+    color: var(--green);
+    font-size: 1em;
+  }
+
 
   .parallax2 img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     pointer-events: none;
   }
 
