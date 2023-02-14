@@ -1452,7 +1452,7 @@ input {
 
 
   .home__data-title {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: -12em;
   }
 
@@ -1595,9 +1595,13 @@ input {
     height: 290px;
   }
 
+  .home__data {
+    padding: 0 7em 0 7em;
+  }
+
   .home__data-title {
-    font-size: 3.5em;
-    margin-top: -10.5em;
+    font-size: 2.8em;
+    margin-top: -13em;
   }
 }
 
