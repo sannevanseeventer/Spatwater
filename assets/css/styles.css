@@ -1626,6 +1626,40 @@ input {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .parallax {
+    display: none;
+  }
+
+  #text {
+    display: none;
+  }
+
+  .parallax img {
+    display: none;
+  }
+
+  .parallax2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75rem;
+  }
+
+  #text2 {
+    position: absolute;
+    margin-left: -30em;
+  }
+
+  .parallax2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;
