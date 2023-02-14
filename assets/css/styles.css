@@ -1274,17 +1274,12 @@ input {
   }
 
   .home__data {
-    padding-left: 2em;
+    padding: 0 3em 0 3em;
   }
 
   .home__data-title {
-    font-size: 2.9em;
-    margin-top: -14em;
-  }
-
-  .home__data-subtitle {
-    font-size: 1.7em;
-
+    font-size: 2.8em;
+    margin-top: -14.3em;
   }
 
   .hero__scroll a {
@@ -1450,19 +1445,13 @@ input {
     margin: 0;
   }
 
+  .home__data {
+    padding: 0 7em 0 7em;
+  }
 
   .home__data-title {
-    font-size: 2.5em;
-    margin-top: -12em;
-  }
-
-  .home__data-subtitle {
-    font-size: 1.7em;
-
-  }
-
-  .hero__scroll a {
-    font-size: 1.4em;
+    font-size: 2.8em;
+    margin-top: -13em;
   }
 
   .scroll-header .nav__link {
