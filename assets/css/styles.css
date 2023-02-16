@@ -113,6 +113,10 @@ h3 {
   font-family: var(--title-font);
 }
 
+.bullet {
+  list-style: inside;
+}
+
 ul {
   list-style: none;
 }
@@ -597,7 +601,7 @@ input {
   height: 100%;
   display: flex;
   align-items: center;
-  color: var(--darkblue);
+  color: var(--spat);
   transition: .75s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
 }
 
@@ -608,7 +612,7 @@ input {
 }
 
 .answer p {
-  color: var(--darkblue);
+  color: var(--text-color);
   font-size: 1em;
   font-weight: 400;
   padding-top: 20px;
@@ -620,18 +624,44 @@ input {
 }
 
 .accordion li.open .answer {
-  max-height: 100em;
+  max-height: 150em;
 }
 
 .projects__title {
-  color: var(--spat);
+  color: var(--text-color);
+  border-bottom: 2px solid var(--green);
+  height: 2em;
+  width: 12em;
   margin-top: 2em;
+}
+
+.sub__title {
+  color: var(--spat);
+  font-size: 1.4em;
+}
+
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user_icon {
+  font-size: 5em;
+  color: var(--darkblue);
+}
+
+
+.big {
+  font-size: 1.2em;
+  color: var(--green);
 }
 
 
 .quote {
-  margin-top: 1em;
-  color: var(--spat);
+  margin-top: 0.5em;
+  color: var(--darkblue);
   font-size: 1.5em;
   text-align: center;
 }
@@ -646,8 +676,9 @@ input {
 }
 
 .link__tool {
-  color: var(--green);
-  border-bottom: 2px solid var(--green);
+  color: var(--text-color);
+  font-style: italic;
+  font-weight: 500;
   cursor: pointer;
 }
 
