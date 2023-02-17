@@ -576,6 +576,16 @@ input {
   margin-bottom: var(--mb-2);
 }
 
+.quote__img {
+  width: 328px;
+  margin: 2.5em 0 0 0;
+}
+
+.quote__img2 {
+  width: 400px;
+  margin: 0.5em 0 1em 0;
+}
+
 
 /* SKILLS */
 
