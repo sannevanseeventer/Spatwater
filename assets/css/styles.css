@@ -541,8 +541,9 @@ input {
 }
 
 .expertise__card .expertise2 {
-  width: 200px;
-  padding-bottom: 2em;
+  width: 230px;
+  padding-top: 1em;
+  padding-bottom: 2.6em;
 }
 
 .expertise__card:nth-child(2) {
@@ -1843,7 +1844,8 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75rem;
+    height: 100rem;
+    margin-top: -12em;
   }
 
   .portfolio__container {
