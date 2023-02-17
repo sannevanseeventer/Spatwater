@@ -536,6 +536,11 @@ input {
 }
 
 .expertise__card img {
+  width: 120px;
+  padding-bottom: 2em;
+}
+
+.expertise__card .expertise2 {
   width: 200px;
   padding-bottom: 2em;
 }
@@ -575,17 +580,6 @@ input {
 .klimaat__description {
   margin-bottom: var(--mb-2);
 }
-
-.quote__img {
-  width: 328px;
-  margin: 2.5em 0 0 0;
-}
-
-.quote__img2 {
-  width: 400px;
-  margin: 0.5em 0 1em 0;
-}
-
 
 /* SKILLS */
 
@@ -915,6 +909,28 @@ input {
 .video__button-icon {
   font-size: 1.2rem;
 }
+
+
+/*=============== VIDEO2 ===============*/
+.video__container2 {
+  padding-bottom: 1rem;
+}
+
+.video__content2 {
+  position: relative;
+}
+
+.video__button2 {
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+  padding: 1rem 1.5rem;
+}
+
+.video__button-icon2 {
+  font-size: 1.2rem;
+}
+
 
 /*=============== SPONSORS ===============*/
 .sponsor {
