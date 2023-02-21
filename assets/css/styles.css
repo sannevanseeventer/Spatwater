@@ -1368,6 +1368,20 @@ input {
     padding-left: 5.8em;
   }
 
+
+  .sponsor__container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 3.5rem;
+  }
+
+  .sponsor__img {
+    width: 100px;
+    opacity: 0.5;
+    filter: invert(0.7);
+    transition: var(--img-transition);
+  }
+
   .footer__content {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     row-gap: 2.5rem;
@@ -1402,7 +1416,7 @@ input {
     color: var(--spat);
     font-weight: 600;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 4em;
   }
 
   .team2__wrapper {
@@ -1705,8 +1719,7 @@ input {
   }
 
   #text2 {
-    position: absolute;
-    margin-left: -30em;
+    position: relative;
   }
 
   .parallax2 img {
@@ -1805,7 +1818,39 @@ input {
   .footer__content {
     justify-items: center;
   }
+
+  #text2 {
+    margin-left: -10rem;
+  }
+
+  .home__data-subtitle2 {
+    color: var(--spat);
+    font-size: 1.5em;
+    display: block;
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-75);
+  }
+
+  .home__data2 {
+    margin-left: 1em;
+  }
+
+  .home__data-title2 {
+    color: var(--darkblue);
+    font-size: 2.5rem;
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+    margin-top: -11em;
+  }
+
+  .hero__scroll2 a {
+    color: var(--green);
+    font-size: 1em;
+  }
+
 }
+
+
 
 
 @media screen and (min-width: 1200px) {
@@ -1883,31 +1928,6 @@ input {
     margin-left: -30em;
   }
 
-
-  .home__data-subtitle2 {
-    color: var(--spat);
-    font-size: 1.5em;
-    display: block;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .home__data2 {
-    margin-left: 1em;
-  }
-
-  .home__data-title2 {
-    color: var(--darkblue);
-    font-size: 2.5rem;
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
-    margin-top: -11em;
-  }
-
-  .hero__scroll2 a {
-    color: var(--green);
-    font-size: 1em;
-  }
 
 
   .parallax2 img {
