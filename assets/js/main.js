@@ -205,6 +205,7 @@ sr.reveal(`.about__data,
 
 sr.reveal(`.about__img-overlay, 
            .video__content,
+           .video__content2,
            .subscribe__form`,{
     origin: 'right',
     interval: 100,
