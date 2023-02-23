@@ -141,6 +141,38 @@ function finalVideo(){
 // ended, when the video ends
 videoFile.addEventListener('ended', finalVideo)
 
+/*==================== VIDEO2 ====================*/
+const videoFile2 = document.getElementById('video-file2'),
+      videoButton2 = document.getElementById('video-button2'),
+      videoIcon2 = document.getElementById('video-icon2')
+
+function playPause2(){ 
+    if (videoFile2.paused){
+        // Play video
+        videoFile2.play()
+        // We change the icon
+        videoIcon2.classList.add('ri-pause-mini-line')
+        videoIcon2.classList.remove('ri-play-mini-line')
+    }
+    else {
+        // Pause video
+        videoFile2.pause(); 
+        // We change the icon
+        videoIcon2.classList.remove('ri-pause-mini-line')
+        videoIcon2.classList.add('ri-play-mini-line')
+
+    }
+}
+videoButton2.addEventListener('click', playPause2)
+
+function finalVideo2(){
+    // Video ends, icon change
+    videoIcon2.classList.remove('ri-pause-mini-line')
+    videoIcon2.classList.add('ri-play-mini-line')
+}
+// ended, when the video ends
+videoFile2.addEventListener('ended', finalVideo2)
+
 /*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
@@ -152,7 +184,7 @@ window.addEventListener('scroll', scrollUp)
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
     distance: '60px',
-    duration: 2800,
+    duration: 2000,
     // reset: true,
 })
 

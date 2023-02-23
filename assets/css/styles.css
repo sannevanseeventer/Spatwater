@@ -113,12 +113,8 @@ h3 {
   font-family: var(--title-font);
 }
 
-.bullet {
-  list-style: inside;
-}
-
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
@@ -535,15 +531,16 @@ input {
   transition: 0.3s ease-in;
 }
 
+
 .expertise__card img {
-  width: 120px;
+  width: 250px;
   padding-bottom: 2em;
 }
 
 .expertise__card .expertise2 {
-  width: 230px;
+  width: 250px;
   padding-top: 1em;
-  padding-bottom: 2.6em;
+  padding-bottom: 0.5em;
 }
 
 .expertise__card:nth-child(2) {
@@ -637,7 +634,32 @@ input {
   border-bottom: 2px solid var(--green);
   height: 2em;
   width: 12em;
-  margin-top: 2em;
+  margin-top: 1em;
+}
+
+
+.projects__title1 {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--green);
+  height: 2em;
+  width: 12em;
+  margin-top: 3em;
+}
+
+.projects__title2 {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--green);
+  height: 3em;
+  width: 17em;
+  margin-top: 3em;
+}
+
+.projects__title3 {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--green);
+  height: 2em;
+  width: 17em;
+  margin-top: 3em;
 }
 
 .sub__title {
@@ -677,7 +699,7 @@ input {
   font-size: 0.8em;
   text-align: center;
   margin-top: 0.5em;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 .link__tool {
@@ -914,7 +936,7 @@ input {
 
 /*=============== VIDEO2 ===============*/
 .video__container2 {
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 .video__content2 {
@@ -1001,7 +1023,7 @@ input {
 }
 
 .footer__link:hover {
-  color: var(--title-color);
+  color: var(--green);
 }
 
 .footer__rights {
@@ -1046,7 +1068,7 @@ input {
 
 .scrollup__icon {
   color: var(--white-color);
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 /* Show scroll */
@@ -1201,17 +1223,17 @@ input {
   }
 
   .about__data {
-    max-width: 40rem;
+    max-width: 44rem;
     margin: 0 auto;
   }
 
   .klimaat__data {
-    max-width: 40rem;
+    max-width: 44rem;
     margin: 0 auto;
   }
 
   .waterkwaliteit__data {
-    max-width: 40rem;
+    max-width: 44rem;
     margin: 0 auto;
   }
 
@@ -1230,10 +1252,6 @@ input {
     width: 16em;
   }
 
-  .video__container {
-    display: grid;
-    justify-content: center;
-  }
 
   .expertise__wrapper {
     display: flex;
@@ -1258,6 +1276,11 @@ input {
 
   ul li {
     font-size: 1.2em;
+    list-style-type: none;
+  }
+
+  .bullet4 {
+    font-size: 0.8em;
   }
 
   .sub__title {
@@ -1736,6 +1759,13 @@ input {
     margin-right: auto;
   }
 
+
+  .portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+
+
   .home__container {
     grid-template-rows: 2fr .5fr;
   }
@@ -1779,7 +1809,7 @@ input {
   }
 
   .expertise__wrapper {
-    padding: 3em 20em 5em 20em;
+    padding: 3em 5em 5em 5em;
 
   }
 
@@ -1848,6 +1878,20 @@ input {
     font-size: 1em;
   }
 
+
+
+  .projects__title1 {
+    font-size: 1.4em;
+  }
+
+  .projects__title2 {
+    font-size: 1.4em;
+  }
+
+  .projects__title3 {
+    font-size: 1.4em;
+  }
+
 }
 
 
@@ -1859,17 +1903,6 @@ input {
   }
 }
 
-/* For tall screens on mobiles y desktop
-@media screen and (min-height: 721px) {
-  body {
-    margin: 0;
-  }
-
-  .home__container,
-  .home__img {
-    height: 640px;
-  }
-} */
 
 @media screen and (min-width: 1250px) {
   .parallax {
@@ -1989,6 +2022,11 @@ input {
 
   .team2__wrapper {
     gap: 3em;
+  }
+
+  .expertise__wrapper {
+    padding: 3em 15em 5em 15em;
+
   }
 
 }
