@@ -733,6 +733,7 @@ input {
   max-width: 100%;
   height: auto;
   display: block;
+  cursor: none;
 }
 
 .portfolio {
@@ -742,10 +743,12 @@ input {
 
 .bd-grid {
   display: grid;
+  cursor: none;
 }
 
 .portfolio__item {
   padding: 0.5em;
+  cursor: pointer;
 }
 
 .portfolio__nav {
@@ -756,12 +759,14 @@ input {
 .portfolio__data {
   text-align: left;
   margin: 1em;
+  cursor: none;
 }
 
 .portfolio__container {
   width: calc(100% - 3rem);
   margin: 0 auto;
   row-gap: 2em;
+  cursor: none;
 }
 
 .portfolio__subtitle {
@@ -779,6 +784,7 @@ input {
   text-align: center;
   font-size: var(--h2-font-size);
   color: var(--spat);
+  cursor: none;
 }
 
 .portfolio__description {
@@ -790,6 +796,7 @@ input {
   font-size: 1.2rem;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+  cursor: none;
 }
 
 .portfolio__img {
