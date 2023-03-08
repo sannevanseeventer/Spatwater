@@ -733,7 +733,6 @@ input {
   max-width: 100%;
   height: auto;
   display: block;
-  cursor: none;
 }
 
 .portfolio {
@@ -743,7 +742,6 @@ input {
 
 .bd-grid {
   display: grid;
-  cursor: none;
 }
 
 .portfolio__item {
@@ -759,14 +757,12 @@ input {
 .portfolio__data {
   text-align: left;
   margin: 1em;
-  cursor: none;
 }
 
 .portfolio__container {
   width: calc(100% - 3rem);
   margin: 0 auto;
   row-gap: 2em;
-  cursor: none;
 }
 
 .portfolio__subtitle {
@@ -784,7 +780,6 @@ input {
   text-align: center;
   font-size: var(--h2-font-size);
   color: var(--spat);
-  cursor: none;
 }
 
 .portfolio__description {
@@ -796,7 +791,6 @@ input {
   font-size: 1.2rem;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
-  cursor: none;
 }
 
 .portfolio__img {
@@ -1488,6 +1482,16 @@ input {
     height: 260px;
   }
 
+
+  .team2__mees2 {
+    background-image: url("../img/stagiar_full1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 210px;
+    height: 260px;
+  }
+
   .name {
     font-size: 1.5rem;
     display: block;
@@ -1527,6 +1531,16 @@ input {
 
   .team2__jesse:hover {
     background-image: url("../img/Jesse2_fullscreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 210px;
+    height: 260px;
+  }
+
+  .team2__mees2:hover {
+    background-image: url("../img/stagiar_full2.png");
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -1658,6 +1672,11 @@ input {
     height: 290px;
   }
 
+  .team2__mees2 {
+    width: 240px;
+    height: 290px;
+  }
+
   .name {
     font-size: 1.5rem;
     display: block;
@@ -1686,6 +1705,11 @@ input {
   }
 
   .team2__jesse:hover {
+    width: 240px;
+    height: 290px;
+  }
+
+  .team2__mees2:hover {
     width: 240px;
     height: 290px;
   }
@@ -1995,6 +2019,11 @@ input {
     height: 350px;
   }
 
+  .team2__mees2 {
+    width: 290px;
+    height: 350px;
+  }
+
   .name {
     font-size: 1.5rem;
     display: block;
@@ -2023,6 +2052,11 @@ input {
   }
 
   .team2__jesse:hover {
+    width: 290px;
+    height: 350px;
+  }
+
+  .team2__mees2:hover {
     width: 290px;
     height: 350px;
   }
